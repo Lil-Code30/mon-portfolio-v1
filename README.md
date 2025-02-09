@@ -3,7 +3,7 @@
 Ce projet est un **portfolio personnel** créé dans le cadre du **certificat en design web responsive** de FreeCodeCamp. L'objectif est de présenter de manière professionnelle les compétences, les projets et le parcours d’un développeur web.
 
 ## 🚀 Démo en ligne
-🔗 [Lien vers la démo](AJOUTER_LIEN_ICI)
+🔗 [Lien vers la démo](https://ismael-loko-v1.vercel.app/)
 
 ## 🛠️ Technologies utilisées
 - **HTML5** – Structure des sections du portfolio  
