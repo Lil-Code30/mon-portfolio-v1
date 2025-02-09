@@ -1,0 +1,120 @@
+:root{
+    --main-color: #1804FD;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 99;
+    background-color: var(--main-color);
+    padding-left: 10px;
+    border-bottom: 3px solid balck;
+}
+header #navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    right: 25px;
+
+}
+header #navbar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-bottom: 13px;
+}
+header #navbar ul li{
+    padding: 0 10px;
+}
+header #navbar ul a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+header #navbar ul a:hover{
+    color: var(--main-color);
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+main{
+    background-color: DarkGray;
+    color: Snow;
+}
+main #welcome-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+main #welcome-section h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+main #welcome-section  span{
+    color: #1904fdb8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main #welcome-section h3{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+}
+main #welcome-section #buttons-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+main #welcome-section #buttons-link a:nth-of-type(even){
+    margin: 0 10px;
+}
+/* resposive */
+@media screen and (max-width: 600px){
+    header #navbar{
+        justify-content: center;
+    }
+    header #navbar ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header #navbar ul li{
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    header #navbar ul a{
+        width: 100%;
+        padding: auto;
+    }
+    
+}
+@media screen and (max-width: 490px){
+    /* main{
+        margin-top: 100px;
+    }  */
+    main #welcome-section h1{
+        font-size: 3rem;
+    }
+}
