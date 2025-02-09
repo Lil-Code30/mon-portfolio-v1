@@ -89,6 +89,13 @@ main #welcome-section #buttons-link{
 main #welcome-section #buttons-link a:nth-of-type(even){
     margin: 0 10px;
 }
+
+/* A propos */
+#a-propos{
+    background-color: azure;
+    color: black;
+    width: 100%;
+}
 /* resposive */
 @media screen and (max-width: 600px){
     header #navbar{
