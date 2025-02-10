@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 header{
     position: fixed;
@@ -91,12 +92,53 @@ main #welcome-section #buttons-link a:nth-of-type(even){
 }
 
 /* A propos */
-#a-propos{
+main #a-propos{
     background-color: azure;
     color: black;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#a-propos-img{
+    box-shadow: 15px 15px black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+main #a-propos #a-propos-content{
+    width: 50%;
+    margin-left:1.5rem;
+    align-self: flex-end;
+}
+main #a-propos #a-propos-content h2{
+    font-size: 2.5rem;
+}
+main #a-propos #a-propos-content p{
+    font-size: 1.5rem;
 }
 /* resposive */
+@media screen and (max-width: 850px){
+    main #a-propos #a-propos-content p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 800px){
+    main #a-propos{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    main #a-propos #a-propos-content{
+        width: 100%;
+        margin-left:0;
+        align-self: center;
+        text-align: center;
+    }
+    main #a-propos #a-propos-content p{
+        font-size: 1.45rem;
+    }
+}
 @media screen and (max-width: 600px){
     header #navbar{
         justify-content: center;
